@@ -2,13 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { BloqueRedondeadoModule } from './directives/bloque-redondeado/bloque-redondeado.module';
+import { DraggableDirective } from './directives/draggable/draggable.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DraggableDirective,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BloqueRedondeadoModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
